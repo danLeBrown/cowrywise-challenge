@@ -37,7 +37,9 @@ export default {
   },
   methods: {
     showModal() {
-      window.navigator.vibrate(30)
+      if (window.navigator.vibrate(30)) {
+        console.log('vibrate');
+      }
       this.loading = true
       return this.$root.$emit('showModal', this.picture)
     },
