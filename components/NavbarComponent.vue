@@ -59,7 +59,7 @@ nav {
   align-items: center;
   height: 100%;
   width: inherit;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 form {
