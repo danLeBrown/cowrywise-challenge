@@ -41,6 +41,7 @@ export default {
         $(e.target).closest('.modal-container').length === 0 ||
         $(e.target).closest('.close-modal').length === 1
       ) {
+        window.navigator.vibrate(30)
         this.$root.$emit('closeModal')
         return (this.showModal = false)
       }
