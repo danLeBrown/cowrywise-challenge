@@ -13,7 +13,8 @@
         </form>
         <div v-else class="nav-meta">
           <h1>
-            Searching for <span class="highlight-text">"{{ $route.query.query }}" </span>
+            Searching for
+            <span class="highlight-text">"{{ $route.query.query }}" </span>
           </h1>
         </div>
       </v-container>
@@ -46,7 +47,7 @@ export default {
 <style scoped>
 nav {
   display: fixed;
-  background: #fafafa;
+  background: var(--border);
   width: 100vw;
   height: 250px;
   padding: 0;
@@ -83,16 +84,21 @@ input {
   margin-right: 1rem;
 }
 
-
 .hihglight-text {
   color: var(--primary-color);
 }
 
-.nav-meta{
+.nav-meta {
+  width: 100%;
   text-align: left;
 }
 
-h1{
+h1 {
   font-size: 36px;
+  color: var(--brand-color);
+}
+
+h1 span {
+  color: #7e8a9e;
 }
 </style>

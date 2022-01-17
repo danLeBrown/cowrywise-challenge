@@ -64,7 +64,7 @@ export default {
 }
 
 .modal-container {
-  width: 70%;
+  width: 90%;
   max-width: 768px;
   border-radius: 1rem;
   display: grid;

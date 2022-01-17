@@ -1,21 +1,9 @@
 :root {
-  --brand-color: limegreen;
+  --brand-color: #3f506d;
   --dark-bg: rgba(0, 0, 0, 0.25);
   --white: #fff;
   --brand-color-bg: rgba(50, 205, 50, 0.25);
-  --green: limegreen;
-  --green-bg: rgba(50, 205, 50, 0.25);
-  --orange: #ff9a14;
-  --orange-bg: rgba(255, 154, 20, 0.25);
-  --blue: #a2dce7;
-  --blue-bg: rgba(162, 220, 231, 0.25);
-  --pink: #f8ccdc;
-  --pink-bg: rgba(248, 204, 220, 0.25);
-  --yellow: #ffed86;
-  --yellow-bg: rgba(255, 237, 134, 0.25);
   --border: #eaedf3;
-  --input-border-color: #d3d3d3;
-  --red-color: #ff2323;
 }
 
 * {
@@ -31,7 +19,6 @@
   box-shadow: 0 1px 3px rgb(0 0 0 / 4%);
   box-sizing: border-box;
   border-radius: 1rem;
-  /* max-width: 768px; */
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
@@ -44,8 +31,6 @@
   -moz-border-radius: 0.25rem;
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
-  /* background: #eaedf3; */
-  background: #5252521f;
 }
 
 #loader-grid .ld-1 .v-skeleton-loader__image {
