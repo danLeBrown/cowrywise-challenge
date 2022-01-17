@@ -35,6 +35,7 @@
 
 #loader-grid .ld-1 .v-skeleton-loader__image {
   height: 300px;
+  background: #f2f2f2;
 }
 
 #loader-grid .ld-8 .v-skeleton-loader__image {

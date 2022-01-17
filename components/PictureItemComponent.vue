@@ -57,7 +57,13 @@ export default {
   border-radius: 0.25rem;
   color: var(--dark-color);
   cursor: pointer;
+  transition: all ease-in-out 300ms;
+  -webkit-transition: all ease-in-out 300ms;
+  -moz-transition: all ease-in-out 3000ms;
+  -ms-transition: all ease-in-out 3000ms;
+  -o-transition: all ease-in-out 3000ms;
 }
+
 
 .img-container::before {
   display: block;
@@ -68,6 +74,18 @@ export default {
   background: var(--dark-bg);
   z-index: 1;
   border-radius: inherit;
+  transition: all ease-in-out 300ms;
+  -webkit-transition: all ease-in-out 300ms;
+  -moz-transition: all ease-in-out 3000ms;
+  -ms-transition: all ease-in-out 3000ms;
+  -o-transition: all ease-in-out 3000ms;
+}
+.img-container:hover{
+  transform: scale(0.9);
+
+}
+.img-container:hover::before {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 img {
