@@ -1,9 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <!-- <v-container> -->
-        <Nuxt />
-      <!-- </v-container> -->
+      <Nuxt />
     </v-main>
   </v-app>
 </template>
@@ -12,8 +10,12 @@
 export default {
   name: 'DefaultLayout',
   data() {
-    return {
-    }
+    return {}
+  },
+  watch: {
+    $route() {
+      return this.$store.commit('pictures/clearPictures')
+    },
   },
 }
 </script>

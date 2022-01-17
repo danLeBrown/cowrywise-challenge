@@ -32,7 +32,6 @@ export default {
   },
   methods: {
     search() {
-      this.$store.commit('pictures/clearPictures')
       this.$router.push({
         path: '/search',
         query: {
