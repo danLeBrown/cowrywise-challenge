@@ -37,8 +37,10 @@ export default {
   },
   methods: {
     showModal() {
-      if (window.navigator.vibrate(30)) {
-        console.log('vibrate');
+      if (!window.navigator.vibrate) {
+        console.log("Browser doesn't support vibration")
+      } else {
+        window.navigator.vibrate(30)
       }
       this.loading = true
       return this.$root.$emit('showModal', this.picture)
@@ -67,7 +69,6 @@ export default {
   -o-transition: all ease-in-out 3000ms;
 }
 
-
 .img-container::before {
   display: block;
   content: '';
@@ -83,9 +84,8 @@ export default {
   -ms-transition: all ease-in-out 3000ms;
   -o-transition: all ease-in-out 3000ms;
 }
-.img-container:hover{
+.img-container:hover {
   transform: scale(0.9);
-
 }
 .img-container:hover::before {
   background: rgba(0, 0, 0, 0.5);
