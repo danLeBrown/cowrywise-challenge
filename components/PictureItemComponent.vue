@@ -54,11 +54,9 @@ export default {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   position: relative;
-  text-align: center;
   border-radius: 0.25rem;
   color: var(--dark-color);
-  text-decoration: none;
-  transition: all ease-in-out 500ms;
+  cursor: pointer;
 }
 
 .img-container::before {
