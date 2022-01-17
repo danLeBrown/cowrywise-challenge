@@ -38,6 +38,7 @@ export default {
   methods: {
     showModal() {
       if (!window || !window.navigator || !window.navigator.vibrate) {
+        // eslint-disable-next-line no-console
         console.log("Browser doesn't support vibration")
       } else {
         window.navigator.vibrate(30)
