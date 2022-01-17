@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     showModal() {
-      if (!window.navigator.vibrate) {
+      if (!window || !window.navigator || !window.navigator.vibrate) {
         console.log("Browser doesn't support vibration")
       } else {
         window.navigator.vibrate(30)

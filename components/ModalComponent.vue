@@ -41,7 +41,11 @@ export default {
         $(e.target).closest('.modal-container').length === 0 ||
         $(e.target).closest('.close-modal').length === 1
       ) {
+      if (!window || !window.navigator || !window.navigator.vibrate) {
+        console.log("Browser doesn't support vibration")
+      } else {
         window.navigator.vibrate(30)
+      }
         this.$root.$emit('closeModal')
         return (this.showModal = false)
       }
