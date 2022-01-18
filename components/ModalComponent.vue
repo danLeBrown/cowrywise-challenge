@@ -3,10 +3,9 @@
     v-if="showModal"
     class="modal-wrapper"
     @click="checkToCloseModal($event)"
-    v-ripple
   >
     <div class="modal-container">
-      <button class="close-modal"><i class="bi bi-x-lg"></i></button>
+      <button v-ripple class="close-modal"><i class="bi bi-x-lg"></i></button>
       <img :src="picture.urls.regular" :alt="picture.alt_description" lazy="load"/>
       <div class="modal-meta">
         <h2>{{ `${picture.user.first_name} ${picture.user.last_name}` }}</h2>
