@@ -1,5 +1,5 @@
 <template>
-  <div class="img-container" @click="showModal">
+  <div class="img-container" @click="showModal" v-ripple>
     <div v-if="loading" class="loading-animation">
       <v-progress-circular
         indeterminate

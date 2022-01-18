@@ -3,6 +3,7 @@
     v-if="showModal"
     class="modal-wrapper"
     @click="checkToCloseModal($event)"
+    v-ripple
   >
     <div class="modal-container">
       <button class="close-modal"><i class="bi bi-x-lg"></i></button>
