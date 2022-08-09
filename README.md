@@ -1,6 +1,6 @@
 # cowrywise-challenge
 
-<img width="1440" alt="Screen Shot 2022-08-09 at 16 25 33" src="https://user-images.githubusercontent.com/63503344/183690871-b9f6199e-9ba0-43e1-a34d-70389b5df87e.png">
+<img width="1440" alt="Screen Shot 2022-08-09 at 16 27 14" src="https://user-images.githubusercontent.com/63503344/183691540-01b186a4-5986-4682-9975-4d9d252cd60c.png">
 
 ## Build Setup
 
